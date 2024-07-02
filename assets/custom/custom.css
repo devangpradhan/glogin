@@ -1,0 +1,35 @@
+.tickit-icon {
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+    filter: drop-shadow(5px 5px 5px #000000);
+}
+
+
+.col-xl-1-3qtr-cstm{
+    -ms-flex: 0 0 14.2%;
+    flex: 0 0 14.2%;
+    max-width: 14.2%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Image Swap */
+
+.swap img:last-child{display:none}
+.swap:hover img:first-child{display:none}
+.swap:hover img:last-child{display:inline-block}
+
+/* UTILITIES gradient Swap */
+
+.bg-utilities-gradient {
+    background: linear-gradient(to left, rgba(1,98,565,0.5), rgba(1,98,565,1)) !important;
+    color: #fff;
+  }
+
+

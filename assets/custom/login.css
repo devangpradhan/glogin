@@ -1,0 +1,224 @@
+/* Variables */
+/**/
+/* Reset */
+/* *, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.025s;
+} */
+
+html,
+body {
+  height: 100%;
+}
+
+/* Generic */
+body {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+  supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* BG*/
+#bgwall {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transition: background-image 20s ease-in-out, background-color 0.3s ease;
+}
+
+.bgwall-on {
+  background-image: radial-gradient(circle, #c6c6ce, #d6d6de);
+}
+
+.bgwall-off {
+  background-image: radial-gradient(circle, #032234, #000f18);
+}
+
+/* .bgwall-on {
+  position: absolute;
+  background-image: radial-gradient(circle, #c6c6ce, #d6d6de);
+  width: 100%;
+  height: 100vh;
+
+}
+.bgwall-off {
+  background-image: radial-gradient(circle, #032234, #000f18);
+} */
+
+/* Penal */
+
+.panel.center {
+  position: relative;
+  width: 100%;
+  min-height: inherit;
+}
+
+.penal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+/* Back Plate */
+
+.bkp_on {
+  position: relative;
+  width: 410px;
+  height: 360px;
+  border-radius: 50px;
+  background-image: linear-gradient(to top, #d5bfbd 30%, #ffffff);
+  box-shadow: 0 10px 15px #98849b;
+  z-index: 1000;
+}
+
+.bkp_off {
+  background-image: linear-gradient( to top,#8a4b90,#416491 40%,#416491 85%,#9ec6b8 );
+  box-shadow: 0 10px 15px #000f18;
+}
+
+/* Front Plate*/
+
+.plate_on {
+  width: 400px;
+  height: 350px;
+  background-color: #e7e7e7;
+  border-radius: 44px;
+}
+
+.plate_off {
+  background-image: linear-gradient(to bottom, #487492, #564a91 90%);
+}
+
+/* Button */
+
+.btn_on {
+  flex-direction: column;
+  width: 210px;
+  height: 150px;
+  border-radius: 8px;
+  background-image: linear-gradient(to top, #d5bfbd 50%, #ffffff);
+  border: 1px solid #bdb5bd;
+  cursor: pointer;
+}
+
+.btn_off {
+  background-image: linear-gradient(
+    to top,
+    #8a4b90,
+    #416491 40%,
+    #416491 50%,
+    #d5e6e0
+  );
+  border: 1px solid #19265c;
+  flex-direction: column-reverse;
+  box-shadow: inset 0 4px 5px #416491;
+}
+
+/* Tap */
+
+/* .tap_on,.tap_off {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+} */
+
+.tap_on {
+  z-index: 100;
+  width: 200px;
+  height: 126px;
+  border-radius: 8px;
+  position: relative;
+  background-color: #ececec;
+  box-shadow: 0 2px 5px #b4b4b4;
+}
+
+.tap_off {
+  background-image: linear-gradient(to top,#4d5b91,#474a81 30%,#474a81 85%,#675489 );
+  box-shadow: none;
+}
+
+/* LED  */
+
+.led_on {
+  position: relative;
+  width: 204px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: #d5bfbd;
+}
+
+.led_off {
+  background-color: #9ec6b8;
+  background: none;
+}
+
+/* Light */
+
+.light_on {
+  width: 25px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #40ce98;
+}
+
+.light_off {
+  background-image: linear-gradient(to top, #d27b91, #c55571);
+}
+
+/* Switch */
+
+.switch-on {
+  padding: 40px 25px;
+  font-weight: 700;
+  font-size: 2rem;
+  position: absolute;
+  text-shadow: 0 -4px 3px rgba(255, 255, 255, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2);
+  color: #aaaaaa;
+}
+
+.switch-off {
+  padding: 40px 25px;
+  font-weight: 700;
+  font-size: 2rem;
+  position: absolute;
+  text-shadow: 0 2px 3px rgba(255, 255, 255, 0.3), 0 -1px 2px rgba(0, 0, 0, 0.2);
+  color: #fcfcfc;
+}
+
+/* Shine */
+
+/* .switch-tap.t-night:hover .shine {
+  transform: skewX(20deg) translateX(300px);
+}
+.switch-tap.l-night:hover .shine{
+  transform: skewX(20deg) translateX(300px);
+}
+
+.shine {
+  width: 15px;
+  height: 126px;
+  border-radius: 2px;
+  transition: all 0.3s linear;
+  background: rgba(255, 255, 255, 0.4);
+  transform: skewX(20deg) translateX(0);
+  margin-left: -3rem;
+  opacity: 0.3;
+} */
+
+/* Form */

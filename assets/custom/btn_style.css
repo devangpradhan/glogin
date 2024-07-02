@@ -1,0 +1,203 @@
+/* Switch */
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* switch on */
+
+.bgwall_on {
+  background-image: radial-gradient(circle, #c6c6ce, #d6d6de);
+}
+.bgwall_off {
+  background-image: radial-gradient(circle, #032234, #000f18);
+}
+.switch_on {
+  padding: 5px 5px;
+  border-radius: 50px;
+  box-shadow: 0 10px 15px #98849b;
+  -webkit-box-shadow: 3px 0 30px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 3px 0 30px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(to top, #d5bfbd 30%, #ffffff);
+}
+.switch_off {
+  padding: 5px 5px;
+  border-radius: 50px;
+  box-shadow: 0 10px 15px #000f18;
+  background-image: linear-gradient(
+    to top,
+    #8a4b90,
+    #416491 40%,
+    #416491 85%,
+    #9ec6b8
+  );
+  -webkit-box-shadow: 3px 0 30px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 3px 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.switch-plate_on {
+  background-color: #e7e7e7;
+  position: relative;
+  border-radius: 45px;
+  padding: 50px 50px;
+}
+
+.switch-plate_off {
+  position: relative;
+  border-radius: 45px;
+  padding: 50px 50px;
+  background-image: linear-gradient(to bottom, #487492, #564a91 90%);
+}
+
+.switch-button_on {
+  flex-direction: column;
+  width: 210px;
+  height: 150px;
+  border-radius: 8px;
+  margin-left: 60px;
+  padding-left: 2px;
+  border: 1px solid #bdb5bd;
+  background-image: linear-gradient(to top, #d5bfbd 50%, #ffffff);
+}
+
+.switch-button_off {
+  flex-direction: column-reverse;
+  border-radius: 8px;
+  width: 210px;
+  height: 150px;
+  margin-left: 60px;
+  padding-left: 2px;
+  border: 1px solid #19265c;
+  box-shadow: inset 0 4px 5px #416491;
+  background-image: linear-gradient(
+    to top,
+    #8a4b90,
+    #416491 40%,
+    #416491 50%,
+    #d5e6e0
+  );
+}
+
+.switch-tap_on {
+  width: 204px;
+  height: 125px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #ececec;
+  box-shadow: 3px 0px 5px 0px #b4b4b4;
+  margin: 3px 0px 2px 0px;
+}
+
+.switch-tap_off {
+  background-image: linear-gradient(
+    to top,
+    #4d5b91,
+    #474a81 30%,
+    #474a81 85%,
+    #675489
+  );
+  width: 204px;
+  height: 126px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px #b4b4b4;
+  overflow: hidden;
+}
+
+.switch-tap_on:hover .shine {
+  transform: skewX(20deg) translateX(300px);
+}
+.switch-tap_off:hover .shine{
+  transform: skewX(20deg) translateX(300px);
+}
+
+.shine {
+  width: 15px;
+  height: 126px;
+  border-radius: 2px;
+  transition: all 0.3s linear;
+  background: rgba(255, 255, 255, 0.4);
+  transform: skewX(20deg) translateX(0);
+  margin-left: -3rem;
+  opacity: 0.3;
+}
+
+.switch-name_on {
+  font-family: "Poppins", Helvetica, sans-serif;
+  padding: 40px 30px;
+  font-weight: 700;
+  font-size: 2rem;
+  position: absolute;
+}
+
+.switch-name_off {
+  font-family: "Poppins", Helvetica, sans-serif;
+  padding: 40px 30px;
+  font-weight: 700;
+  font-size: 2rem;
+  position: absolute;
+  color: whitesmoke;
+}
+
+.switch-led_on {
+  width: 205px;
+  height: 18px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  margin: 3px 0px 2px 0px;
+  background-color: #d5bfbd;
+}
+
+.switch-led_off {
+  width: 205px;
+  height: 18px;
+  margin: 3px 0px 2px 0px;
+  border-radius: 8px;
+  background-color: #9ec6b8;
+  overflow: hidden;
+  position: relative;
+  opacity: 0.1;
+}
+
+.switch-led-i_on {
+  width: 25px;
+  height: 4px;
+  border-radius: 10px;
+  margin: 5px 0 0 90px;
+  background-color: #40ce98;
+}
+
+.switch-led-i_off {
+  width: 25px;
+  height: 4px;
+  border-radius: 10px;
+  margin: 5px 0 0 90px;
+  background-image: linear-gradient(to top, #d27b91, #c55571);
+}
+
+.shadow_on {
+  top: 50%;
+  height: 200px;
+  position: absolute;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 25px;
+  background-image: linear-gradient(to bottom, #98849b, rgba(152, 132, 155, 0));
+}
+
+.shadow_off {
+  top: 50%;
+  height: 200px;
+  position: absolute;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 25px;
+  background-image: linear-gradient(to bottom, #000f18, rgba(0, 15, 24, 0) 85%);
+}
+
+

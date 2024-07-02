@@ -1,0 +1,176 @@
+/* Variables */
+/**/
+/* Reset */
+/* *, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.025s;
+} */
+
+html,
+body {
+  height: 100%;
+}
+
+/* Generic */
+body {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+  supported by Chrome, Edge, Opera and Firefox */
+}
+/* ON */
+
+
+.bgwall-on {
+  background-image: radial-gradient(circle, #C6C6CE, #D6D6DE);
+  width: 100%;
+  height: 100vh;
+}
+
+.panel.center {
+  position: relative;
+  width: 100%;
+  min-height: inherit;
+}
+
+.penal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch_on {
+  position: relative;
+  width: 460px;
+  height: 360px;
+  border-radius: 50px;
+  background-image: linear-gradient(to top, #D5BFBD 30%, #FFFFFF);
+  box-shadow: 0 10px 15px #98849b;
+  z-index: 1000;
+}
+.switch_plate {
+  width: 450px;
+  height: 350px;
+  background-color: #E7E7E7;
+  border-radius: 44px;
+}
+.switch_btn {
+  flex-direction: column;
+  width: 210px;
+  height: 150px;
+  border-radius: 8px;
+  background-image: linear-gradient(to top, #D5BFBD 50%, #FFFFFF);
+  border: 1px solid #BDB5BD;
+  cursor: pointer;
+}
+.switch_tap {
+  position: relative;
+  width: 204px;
+  height: 126px;
+  background-color: #ECECEC;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px #b4b4b4;
+  z-index: 100;
+}
+.switch_led {
+  position: relative;
+  width: 204px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: #D5BFBD;
+}
+.switch_led-i {
+  width: 25px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #40CE98;
+}
+
+.switch-on {
+  padding: 40px 25px;
+  font-weight: 700;
+  font-size: 2rem;
+  position: absolute;
+  text-shadow: 0 -4px 3px rgba(255, 255, 255, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2);
+  color:#aaaaaa;
+}
+
+.switch-off {
+  padding: 40px 25px;
+  font-weight: 700;
+  font-size: 2rem;
+  position: absolute;
+  text-shadow: 0 2px 3px rgba(255, 255, 255, 0.3), 0 -1px 2px rgba(0, 0, 0, 0.2);
+  color: #fcfcfc;
+}
+
+
+/* Off */
+
+.bgwall-off {
+  background-image: radial-gradient(circle, #032234, #000f18);
+}
+
+.switch_off {
+  background-image: linear-gradient(to top, #8A4B90, #416491 40%, #416491 85%, #9EC6B8);
+  box-shadow: 0 10px 15px #000f18;
+}
+
+.plate_off {
+  background-image: linear-gradient(to bottom, #487492, #564A91 90%);
+}
+
+.btn_off {
+  background-image: linear-gradient(to top, #8A4B90, #416491 40%, #416491 50%, #d5e6e0);
+  border: 1px solid #19265C;
+  flex-direction: column-reverse;
+  box-shadow: inset 0 4px 5px #416491;
+}
+
+.tap_off {
+  background-image: linear-gradient(to top, #4D5B91, #474A81 30%, #474A81 85%, #675489);
+  box-shadow: none;
+}
+
+.led_off {
+  background-color: #9EC6B8;
+  background: none;
+}
+
+.li-night {
+  background-image: linear-gradient(to top, #D27B91, #c55571);
+}
+
+/* Shine */
+
+/* .switch-tap.t-night:hover .shine {
+  transform: skewX(20deg) translateX(300px);
+}
+.switch-tap.l-night:hover .shine{
+  transform: skewX(20deg) translateX(300px);
+}
+
+.shine {
+  width: 15px;
+  height: 126px;
+  border-radius: 2px;
+  transition: all 0.3s linear;
+  background: rgba(255, 255, 255, 0.4);
+  transform: skewX(20deg) translateX(0);
+  margin-left: -3rem;
+  opacity: 0.3;
+} */
+
+/* Form */
