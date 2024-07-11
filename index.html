@@ -15,20 +15,18 @@
 
 <body>
 
-  <div class="bg bgwall-on bgwall-off" id="bgwall"></div>
-
-  <main class="switch-penal noselect">
+  <div class="bg bgwall_on bgwall_off bgwall" id="bgwall"></div>
+  <main class="switch_penal noselect">
     <div class="bkp_on bkp_off" id="switch">
       <div class="plate_on plate_off" id="plate">
         <form action="">
           <!-- <h1 class="h3">Login</h1> -->
           <div class="form-floating">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+            <!-- <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required> -->
             <!-- <label for="floatingInput">Email address</label> -->
           </div>
-
           <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+            <!-- <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required> -->
             <!-- <label for="floatingPassword">Password</label> -->
           </div>
 
@@ -44,7 +42,7 @@
               <audio id="clickSound" preload="auto"></audio>
 
               <div class="tap_on tap_off" id="tap">
-                <span class="switch-off" id="btname">VALIDATE</span>
+                <span class="switch_off" id="btname">VALIDATE</span>
                 <div class="shine"></div>
               </div>
 
@@ -54,9 +52,15 @@
               </div>
             </div>
           </div>
-
         </form>
+
         <img class="logo" id="toggleLogo" src="assets/logos/logo_off.png" alt="logo">
+
+        <!-- <svg class="logo" id="toggleLogo" width="50" height="50" viewBox="0 0 100 100">
+          <use xlink:href="assets/logos/logo_off.svg#logoff"></use>
+        </svg> -->
+        <!-- <object class="logo" id="toggleLogo" data="assets/logos/logo_off.svg" width="100" height="100"> </object> -->
+
       </div>
     </div>
   </main>
@@ -64,6 +68,7 @@
 
 </body>
 <script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/velocity.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/custom/login.js"></script>
 

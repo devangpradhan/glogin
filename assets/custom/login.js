@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
 	// Toggle the class when the element is clicked
 	element.addEventListener('click', function() {
-	  element.classList.toggle('switch-off');
-	  element.classList.toggle('switch-off');
-	  bgwall.classList.toggle("bgwall-off");
+	  element.classList.toggle('switch_off');
+	  element.classList.toggle('switch_off');
+	  bgwall.classList.toggle("bgwall_off");
 	  swi.classList.toggle("bkp_off");
 	  plate.classList.toggle("plate_off");
 	  button.classList.toggle("btn_off");
@@ -55,6 +55,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
         clickSound.play();
     });
 });
-
-
 
