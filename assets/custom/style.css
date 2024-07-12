@@ -42,28 +42,28 @@ body {
 
 /* Define transition for all elements under .switch_penal and .switch_penal */
 
-.switch_penal .bgwall-on,
 .switch_penal .bkp_on,
 .switch_penal .plate_on,
 .switch_penal .btn_on,
 .switch_penal .switch-on,
 .switch_penal .tap_on,
 .switch_penal .led_on,
-.switch_penal .light_on {
+.switch_penal .light_on
+ {
   transition: all 0.5s ease-in-out;
   
 }
 
 /* transition: all 0.5s ease-in-out; */
 
-.switch_penal .bgwall-off,
 .switch_penal .bkp_off,
 .switch_penal .plate_off,
 .switch_penal .btn_off,
 .switch_penal .switch-off,
 .switch_penal .tap_off,
 .switch_penal .led_off,
-.switch_penal .light_off {
+.switch_penal .light_off
+ {
   transition: all 0.5s ease-in-out;
 }
 
@@ -78,6 +78,7 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
+  transition: all 10s ease-in-out;
 }
 
 .bgwall_on {
@@ -256,6 +257,8 @@ body {
 
 .switch_penal .form-check input {
   margin-right: 0.5em;
+  /* background-image: linear-gradient(to bottom, #487492, #564a91 90%);*/
+  background-color: #487492;
 }
 
 .switch_penal .form-check input:checked {
