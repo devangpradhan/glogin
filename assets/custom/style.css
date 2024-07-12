@@ -257,7 +257,16 @@ body {
 
 .switch_penal .form-check input {
   margin-right: 0.5em;
-  /* background-image: linear-gradient(to bottom, #487492, #564a91 90%);*/
+}
+
+.switch_penal .form-check input {
+  margin-right: 0.5em;
+}
+.tick_on{
+  background-color: transparent;
+}
+
+.tick_off{
   background-color: #487492;
 }
 

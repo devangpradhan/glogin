@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	let tap = document.querySelector("#tap");
 	let led = document.querySelector("#led");
 	let ledi = document.querySelector("#ledi");
+	let tick = document.querySelector("#rememberMeSwitch");
   
 	// Toggle the class when the element is clicked
 	element.addEventListener('click', function() {
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	  tap.classList.toggle("tap_off");
 	  led.classList.toggle("led_off");
 	  ledi.classList.toggle("light_off");
+	  tick.classList.toggle("tick_off");
 
 	});
 	
